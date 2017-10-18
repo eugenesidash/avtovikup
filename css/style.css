@@ -520,6 +520,9 @@ footer .info-2 ul li {
   text-align: left;
   padding: 0 30px;
 }
+.button-click {
+  display: none;
+}
 .nav-menu-click {
   display: none;
 }
