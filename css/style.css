@@ -257,12 +257,16 @@ header {
   width: 150px;
   color: #fff;
   float: left;
+  margin-bottom: 10px;
 }
 .tab .tab-name p {
   width: 116px;
   border-bottom: 2px solid #009458;
   padding: 10px 0;
   height: 60px;
+}
+.tab .tab-name p:hover {
+  color: #009458;
 }
 .tab .tab-content {
   float: left;
@@ -277,6 +281,7 @@ header {
   color: #fff;
   font-size: 29px;
   margin: 15px 0;
+  text-align: left;
 }
 .tab .tab-content p {
   font-family: GothamProLight;
@@ -596,4 +601,16 @@ button#next-avto span:hover {
 .vikup-avto-media,
 .vikup-avto-media-800 {
   display: none;
+}
+.tab > div,
+.tab > input {
+  display: none;
+}
+.tab label p {
+  cursor: pointer;
+}
+.tab > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.tab > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.tab > input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+  display: block;
 }
