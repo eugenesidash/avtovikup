@@ -137,6 +137,7 @@ header {
 .nav-menu ul li a img,
 .nav-menu-footer ul li a img {
   margin-right: 10px;
+  width: 28px;
 }
 .nav-menu-footer {
   margin-top: -15px;
@@ -591,4 +592,8 @@ button#next-avto span {
 button#prev-avto span:hover,
 button#next-avto span:hover {
   color: #fff;
+}
+.vikup-avto-media,
+.vikup-avto-media-800 {
+  display: none;
 }
