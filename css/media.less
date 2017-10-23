@@ -164,12 +164,13 @@
 	.tab {
 		& .tab-name {
 			width: 100%;
+			float: none;
 		}
 		& .tab-name p {
 			float: left;
 			width: 33.33%;
 			text-align: center;
-			line-height: 3;
+			line-height: 1.5;
 			border: 2px solid #009458;
 			&.tab-name-last {
 				line-height: 1.5;
@@ -367,8 +368,16 @@
 	.bg-1 {
 		height: auto;
 	}
-	.tab .tab-content h2 {
-		text-align: center;
+	.tab {
+		& .tab-content h2 {
+			text-align: center;
+		}
+		& .tab-name p {
+			line-height: 3;
+		}
+	}
+	.tab .tab-name p.tab-name-last {
+		line-height: 3;
 	}
 	.form {
 		background: none;
@@ -478,6 +487,11 @@
 	}
 	.button-click {
 		display: block;
+	}
+}
+@media screen and (max-width: 710px) {
+	.tab .tab-name p.tab-name-last {
+		line-height: 1.5;
 	}
 }
 @media screen and (max-width: 645px) {
